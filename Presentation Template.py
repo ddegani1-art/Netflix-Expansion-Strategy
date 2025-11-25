@@ -1,20 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# <center><h1 style="color:red;">Netflix Expansion Strategy</h1></center>
-# 
-# ### Claire Owens, Danielle Degani, Jessica Alvino
-# <center><h4 style="color:green;"> Programming for Business Analytics Presentation</h4></center>
-# 
-# 
-# **Date:** 11/25/25
-# 
-# **Affiliation:** Binghamton University, School of Management, NY, USA
-# 
-
-#!/usr/bin/env python
-# coding: utf-8
-
 # --- Netflix Expansion Strategy Dashboard ---
 import streamlit as st
 import pandas as pd
@@ -49,7 +35,7 @@ df['cast'] = df['cast'].fillna("Unknown")
 df['genres'] = df['listed_in'].str.split(', ')
 df['country_list'] = df['country'].str.split(', ')
 
-st.success("Data cleaned")
+st.success("✅ Data cleaned successfully!")
 
 # --------------------------------------------
 # Step 3A: Movies vs TV Shows Over Time
@@ -119,9 +105,11 @@ st.pyplot(plt)
 st.header("Conclusions")
 st.write("""
 Netflix’s content library has evolved dramatically over time:
-- **TV shows** have grown rapidly, especially post-2015.
-- **Genre diversity** has expanded beyond drama and comedy.
-- **Global reach** increased, with major contributions from India, the UK, and South Korea.
+- 📈 **TV shows** have grown rapidly, especially post-2015.
+- 🎭 **Genre diversity** has expanded beyond drama and comedy.
+- 🌍 **Global reach** increased, with major contributions from India, the UK, and South Korea.
 
 These findings highlight Netflix’s strategy to appeal to a global audience by diversifying its content offerings.
 """)
+
+st.success("Dashboard complete! 🎬")
