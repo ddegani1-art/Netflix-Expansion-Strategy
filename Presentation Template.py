@@ -46,7 +46,7 @@
 
 import pandas as pd
 
-df = pd.read_csv("/Users/claireowens/Documents/netflix_titles.csv")
+df = pd.read_csv("netflix_titles.csv")
 df.head(50)
 
 
