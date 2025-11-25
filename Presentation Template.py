@@ -35,7 +35,7 @@ df['cast'] = df['cast'].fillna("Unknown")
 df['genres'] = df['listed_in'].str.split(', ')
 df['country_list'] = df['country'].str.split(', ')
 
-st.success("Data cleaned successfully")
+st.success("✅ Data cleaned successfully!")
 
 # --------------------------------------------
 # Step 3A: Movies vs TV Shows Over Time
